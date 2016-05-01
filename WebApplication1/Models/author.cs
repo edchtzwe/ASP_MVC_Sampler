@@ -6,16 +6,16 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class author
+    public class Author
     {
         [ScaffoldColumn(false)]
-        public int AuthorID { get; set; }
+        public int authorID { get; set; }
         [Required]
         [Display(Name = "Last Name")]
-        public String LastName { get; set; }
+        public String lastName { get; set; }
         [Display(Name = "First Name")]
-        public string FirstName { get; set; }
+        public string firstName { get; set; }
         //a collection that stores all the books in the bookstore
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Book> books { get; set; }
     }
 }
